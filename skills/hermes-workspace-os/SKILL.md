@@ -40,6 +40,10 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 | [modules/13-skill-combos.md](modules/13-skill-combos.md) | Pakiety skilli jako wirtualni pracownicy (działy) |
 | [modules/14-failbook.md](modules/14-failbook.md) | Znane failury + fixy (cron, mail, memory, media, git) |
 | [modules/15-anti-slop.md](modules/15-anti-slop.md) | Quality gate — tekst, obrazki, UI |
+| [modules/16-step-beyond.md](modules/16-step-beyond.md) | Step Beyond — agent jako przedłużenie myśli (L1/L2/L3) |
+| [modules/17-marketing-psychology.md](modules/17-marketing-psychology.md) | Psychologia reklam — 6 aniołów, lejek 60/20/10, jasnopis |
+| [modules/18-virtual-team.md](modules/18-virtual-team.md) | Virtual team — org chart, rekrutacja, tygodniowy rytm |
+| [modules/19-design-taste.md](modules/19-design-taste.md) | Design & taste — anti-AI-look dla obrazków/UI/copy |
 
 ## Quick start (nowy workspace, 60 minut)
 

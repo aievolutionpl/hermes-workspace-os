@@ -8,11 +8,31 @@
 
 Vault · Pamięć · Skills · Cron · Weryfikacja · Koszty · Bezpieczeństwo · Anti-slop
 
-[![Modules](https://img.shields.io/badge/modules-15-00E7FF)](#zawartość)
+[![Modules](https://img.shields.io/badge/modules-19-00E7FF)](#zawartość)
 [![License](https://img.shields.io/badge/license-MIT-7CFF1E)](LICENSE)
 [![Agent](https://img.shields.io/badge/built%20for-Hermes%20Agent-cyan)](https://github.com/NousResearch/hermes-agent)
 
 *Zbudowane z ~1 roku realnej codziennej pracy: 11 marek, crony produkcyjne, media pipeline, outreach.*
+
+## Nie instalujesz agenta. Zatrudniasz drużynę.
+
+Kluczowy moduł — [18-virtual-team](skills/hermes-workspace-os/modules/18-virtual-team.md):
+**7 wirtualnych pracowników** z pakietami skilli, cronami i delivery targetami:
+
+| Pracownik | Robi |
+|---|---|
+| **Chief of Staff** | daily brief, priorytety, koordynacja |
+| **Researcher** | konkurencja, trendy, monitoring (monitor-gated) |
+| **Content Creator** | posty, carousele, reele → QA → approve |
+| **Media Producer** | wideo, voice, montaż |
+| **Growth / Ads** | kampanie wg frameworka psychologicznego (mod. 17) |
+| **Sales / SDR** | leady → weryfikacja → outreach → funnel digest |
+| **Ops / Infra** | audyt infrastruktury, backup, failbook |
+
+Handoff przez wspólny vault, izolowane memory per pracownik, QA gate przed każdym
+handoffem, eskalacja do człowieka przy publikacji/wydatkach. Do tego
+[Step Beyond (mod. 16)](skills/hermes-workspace-os/modules/16-step-beyond.md) —
+każdy pracownik dokonuje myśli: *L1 Polish zawsze, L2 Extend max 3, L3 Anticipate max 1.*
 
 </div>
 
@@ -69,6 +89,14 @@ Można też dodać repo jako custom tap (`hermes skills`).
 | [13-skill-combos](skills/hermes-workspace-os/modules/13-skill-combos.md) | Pakiety skilli jako wirtualni pracownicy |
 | [14-failbook](skills/hermes-workspace-os/modules/14-failbook.md) | Znane failury + fixy (cron, mail, memory, media, git) |
 | [15-anti-slop](skills/hermes-workspace-os/modules/15-anti-slop.md) | Quality gate — tekst, obrazki, UI |
+
+### Jako zespół (moduły 16–19)
+| Moduł | Temat |
+|-------|-------|
+| [16-step-beyond](skills/hermes-workspace-os/modules/16-step-beyond.md) | **Step Beyond** — agent jako przedłużenie myśli: L1 Polish / L2 Extend / L3 Anticipate, pipeline RECALL→LEARN, sufit 5/3/1 |
+| [17-marketing-psychology](skills/hermes-workspace-os/modules/17-marketing-psychology.md) | **Marketing psychology** — creative = 80% wyniku, 6 aniołów (emocje), anatomia reklamy, lejek 60/20/10, blended CAC/MER |
+| [18-virtual-team](skills/hermes-workspace-os/modules/18-virtual-team.md) | **Virtual team** — org chart 7 pracowników (Chief of Staff, Researcher, Content Creator, Media Producer, Growth, Sales, Ops), rekrutacja, tygodniowy rytm |
+| [19-design-taste](skills/hermes-workspace-os/modules/19-design-taste.md) | **Design & taste** — anti-AI-look: kontekst nie próżnia, referencje > prompt, ekosystem strony |
 
 ## Recipes — na szybko
 
