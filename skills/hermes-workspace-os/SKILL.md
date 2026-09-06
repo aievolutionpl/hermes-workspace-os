@@ -43,6 +43,9 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 
 ## Quick start (nowy workspace, 60 minut)
 
+> **Ważne:** instalując ten skill, najpierw przeczytaj [README.md](../../README.md)
+> (filozofia + recipes), potem wróć tutaj po plan wdrożenia.
+
 Kolejność ma znaczenie: **memory first, persona second, interfaces last.**
 
 1. **Vault + memory** (35 min): struktura z `01-vault.md`, wypełnij `ACTIVE_CONTEXT.md`, zapisz 5–10 faktów o użytkowniku i środowisku.
