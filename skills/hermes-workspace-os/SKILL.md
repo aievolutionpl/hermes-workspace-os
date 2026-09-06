@@ -33,14 +33,20 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 | [modules/06-costs.md](modules/06-costs.md) | Modele, fallback, kontrola kosztów |
 | [modules/07-parallel.md](modules/07-parallel.md) | Delegacja i praca równoległa |
 | [modules/08-hygiene.md](modules/08-hygiene.md) | Naming, foldery, archiwizacja — zero chaosu |
+| [modules/09-context-files.md](modules/09-context-files.md) | AGENTS.md, SOUL.md, @-references — warstwy kontekstu |
+| [modules/10-security.md](modules/10-security.md) | Sekwencja wdrożenia, profile, approvals, Docker |
+| [modules/11-smart-workflow.md](modules/11-smart-workflow.md) | Prompt cache, sesje, limity cronów, audyty cykliczne |
 
 ## Quick start (nowy workspace, 60 minut)
 
-1. **Vault** (30 min): załóż strukturę z `01-vault.md` + wypełnij `ACTIVE_CONTEXT.md`.
-2. **Memory** (5 min): zapisz 5–10 najważniejszych faktów o użytkowniku i środowisku.
-3. **Skills** (10 min): przenieś 2–3 najczęstsze procedury do SKILL.md.
-4. **Cron** (10 min): ustaw 1–2 rutyny (briefing / monitoring) z continuity.
-5. **Hygiene** (5 min): reguły naming w vault indexie, żeby agent je czytał.
+Kolejność ma znaczenie: **memory first, persona second, interfaces last.**
+
+1. **Vault + memory** (35 min): struktura z `01-vault.md`, wypełnij `ACTIVE_CONTEXT.md`, zapisz 5–10 faktów o użytkowniku i środowisku.
+2. **SOUL.md** (5 min): osobowość agenta — ton, poziom formalności, czego nie robić.
+3. **AGENTS.md** (10 min): zasady projektu w `09-context-files.md` — krótko i chirurgicznie.
+4. **Skills** (10 min): przenieś 2–3 najczęstsze procedury do SKILL.md.
+5. **Cron** (10 min): 1–2 rutyny read-only (briefing / monitoring), z continuity i limitem.
+6. **Test prawdziwy**: sprawdź tool calls (nie chat!) — `10-security.md`.
 
 ## Checklist audytu istniejącego workspace
 
@@ -51,3 +57,7 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 - [ ] Naming: zero luźnych plików na root, zero `_final2`?
 - [ ] Weryfikacja E2E przy każdej deklaracji "działa"?
 - [ ] Cotygodniowy przegląd infrastruktury ustawiony?
+- [ ] Approvals ON, allowlisty per platforma, sekrety poza memory/chat?
+- [ ] Profile izolowane per rola/eksperyment?
+- [ ] Prompt cache chroniony (bez skakania po modelach w sesji)?
+- [ ] Wszystko unattended ma budget cap i disable command?

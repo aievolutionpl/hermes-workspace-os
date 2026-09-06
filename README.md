@@ -33,11 +33,18 @@ Cały system to 8 modułów w `skills/hermes-workspace-os/modules/` — każdy s
 | [06-costs](skills/hermes-workspace-os/modules/06-costs.md) | Routowanie modeli, fallback, redukcja kosztów |
 | [07-parallel](skills/hermes-workspace-os/modules/07-parallel.md) | Delegacja i subagenci |
 | [08-hygiene](skills/hermes-workspace-os/modules/08-hygiene.md) | Naming, foldery, archiwizacja |
+| [09-context-files](skills/hermes-workspace-os/modules/09-context-files.md) | AGENTS.md, SOUL.md, warstwy kontekstu |
+| [10-security](skills/hermes-workspace-os/modules/10-security.md) | Sekwencja wdrożenia, profile, approvals, Docker |
+| [11-smart-workflow](skills/hermes-workspace-os/modules/11-smart-workflow.md) | Prompt cache, sesje, cron caps, audyty cykliczne |
 
 ## Trzy żelazne zasady
 1. **Jedno miejsce na prawdę** — bez kanonicznego źródła agent duplikuje i halucynuje.
 2. **Verified > fast** — żadne "it works" bez realnego testu.
 3. **Korekta → reguła** — nigdy nie poprawiaj tego samego dwa razy; zapisuj jako skill/memory.
+
+**Sekwencja wdrożenia:** memory first, persona second, interfaces last. Testuj tool calls, nie chat. Limituj wszystko, co działa unattended.
+
+*Best practices uzupełnione researchem: oficjalne Hermes docs (tips, delegation patterns) + praktyki społeczności (profile-per-job, bezpieczne crony, prompt cache, warstwy pamięci).*
 
 ## Quick start — 60 minut
 Szczegóły w [SKILL.md](skills/hermes-workspace-os/SKILL.md) → sekcja *Quick start*.
