@@ -36,6 +36,22 @@ Cały system to 8 modułów w `skills/hermes-workspace-os/modules/` — każdy s
 | [09-context-files](skills/hermes-workspace-os/modules/09-context-files.md) | AGENTS.md, SOUL.md, warstwy kontekstu |
 | [10-security](skills/hermes-workspace-os/modules/10-security.md) | Sekwencja wdrożenia, profile, approvals, Docker |
 | [11-smart-workflow](skills/hermes-workspace-os/modules/11-smart-workflow.md) | Prompt cache, sesje, cron caps, audyty cykliczne |
+| [12-recipes](skills/hermes-workspace-os/modules/12-recipes.md) | 10 recipes — gotowe połączenia workflow |
+| [13-skill-combos](skills/hermes-workspace-os/modules/13-skill-combos.md) | Pakiety skilli = wirtualni pracownicy |
+| [14-failbook](skills/hermes-workspace-os/modules/14-failbook.md) | Znane failury i fixy |
+| [15-anti-slop](skills/hermes-workspace-os/modules/15-anti-slop.md) | Quality gate outputu |
+
+## Recipes — na szybko
+| Recipe | Co robi |
+|--------|---------|
+| R1 Gather cheap, reason expensive | `execute_code` zbiera → subagent analizuje z clean context |
+| R2 Monitor-gated cron + continuity | Agent budzi się TYLKO przy zmianie, dedupe vs poprzedni przebieg |
+| R3 Korekta → skill → repo | Poprawka jednorazowa staje się permanentna i przenośna |
+| R4 Session search → vault | Historyczne szczegóły awansują na trwałe fakty |
+| R5 Subagent review | Fresh-context recenzent łapie to, autor przyzwyyczaił |
+| R6 Cron → draft → approve → publish | Crony nigdy nie publikują bez review stepu |
+| R8 Weekly ops audit | Infrastruktura audytuje samą siebie |
+| R9 Profile per rola | Izolowane memory = brak biasów między działami |
 
 ## Trzy żelazne zasady
 1. **Jedno miejsce na prawdę** — bez kanonicznego źródła agent duplikuje i halucynuje.

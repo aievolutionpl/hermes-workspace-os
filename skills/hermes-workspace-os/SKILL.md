@@ -36,6 +36,10 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 | [modules/09-context-files.md](modules/09-context-files.md) | AGENTS.md, SOUL.md, @-references — warstwy kontekstu |
 | [modules/10-security.md](modules/10-security.md) | Sekwencja wdrożenia, profile, approvals, Docker |
 | [modules/11-smart-workflow.md](modules/11-smart-workflow.md) | Prompt cache, sesje, limity cronów, audyty cykliczne |
+| [modules/12-recipes.md](modules/12-recipes.md) | 10 recipes — połączenia workflow, które się kumulują |
+| [modules/13-skill-combos.md](modules/13-skill-combos.md) | Pakiety skilli jako wirtualni pracownicy (działy) |
+| [modules/14-failbook.md](modules/14-failbook.md) | Znane failury + fixy (cron, mail, memory, media, git) |
+| [modules/15-anti-slop.md](modules/15-anti-slop.md) | Quality gate — tekst, obrazki, UI |
 
 ## Quick start (nowy workspace, 60 minut)
 
@@ -61,3 +65,5 @@ Kolejność ma znaczenie: **memory first, persona second, interfaces last.**
 - [ ] Profile izolowane per rola/eksperyment?
 - [ ] Prompt cache chroniony (bez skakania po modelach w sesji)?
 - [ ] Wszystko unattended ma budget cap i disable command?
+- [ ] Każdy workflow ma QA step PRZED delivery?
+- [ ] Failbook karmiony (nowy fail → patch w 24h)?
