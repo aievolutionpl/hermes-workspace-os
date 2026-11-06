@@ -42,8 +42,8 @@ każdy pracownik dokonuje myśli: *L1 Polish zawsze, L2 Extend max 3, L3 Anticip
 
 Hermes nie zawodzi na możliwościach — zawodzi na **nawykach setupu**. Typowy miesiąc
 pierwszy: agent duplikuje pracę, halucynuje fakty, spala budżet na cronach bez limitu,
-"zapomina" ustalenia. Ten skill to antydot: 15 modułów z zasadami, recipe'ami,
-failbookiem i quality gate'em — wszystko przetestowane w boju, nie teoretyczne.
+"zapomina" ustalenia. Repo zawiera 19 modułów z zasadami, przykładami,
+failbookiem i quality gate'em. Dopasuj je do własnego środowiska i weryfikuj działanie.
 
 ## Trzy żelazne zasady
 
@@ -56,14 +56,10 @@ Testuj tool calls, nie chat. Limituj wszystko, co działa unattended.
 
 ## Instalacja
 
-```bash
-git clone https://github.com/aievolutionpl/hermes-workspace-os.git
-cp -r hermes-workspace-os/skills/hermes-workspace-os ~/.hermes/skills/
-```
-
-Agent wykryje skill `hermes-workspace-os` automatycznie — wywołaj go przy stawianiu
-nowego workspace lub onboardingu: `skill_view("hermes-workspace-os")`.
-Można też dodać repo jako custom tap (`hermes skills`).
+Zacznij od [przewodnika dla początkujących lub obecnych użytkowników](docs/onboarding.md).
+Repozytorium jest zbiorem materiałów; samo sklonowanie niczego nie instaluje ani nie
+zmienia konfiguracji. Przed instalacją jakiegokolwiek skilla przejrzyj jego treść i
+[oficjalną dokumentację](https://hermes-agent.nousresearch.com/docs/user-guide/features/skills/).
 
 ## Zawartość
 
@@ -113,12 +109,14 @@ Można też dodać repo jako custom tap (`hermes skills`).
 | **R9** Profile per rola | Izolowane memory = brak biasów między działami |
 | **R10** Interrupt-and-redirect | Cel + granice zamiast mikro-zarządzania krok po kroku |
 
-## Quick start — 60 minut
+## Quick start — orientacyjnie
 
-Pełny plan w [SKILL.md](skills/hermes-workspace-os/SKILL.md). Skrót:
+1. Wybierz [ścieżkę onboardingu](docs/onboarding.md) i poznaj granice dostępu.
+2. Wypróbuj fikcyjny [szablon zadania](templates/task.md) oraz jeden workflow z [biblioteki](docs/workflows.md).
+3. Sprawdź wynik na rzeczywistym, bezpiecznym zadaniu; automatyzację dodaj dopiero później.
 
-1. **Vault + memory** (35 min) → 2. **SOUL.md** (5) → 3. **AGENTS.md** (10) →
-4. **Skills** (10) → 5. **Cron read-only z limitem** (10) → 6. **Test tool calls** (5)
+[Opcjonalne projekty](docs/ecosystem.md) · [Przykłady](examples/fictional-handoff.md) ·
+[Testy repozytorium](tests/README.md)
 
 ## Checklist audytu istniejącego workspace
 

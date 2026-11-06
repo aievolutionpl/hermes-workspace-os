@@ -1,6 +1,6 @@
 ---
 name: hermes-workspace-os
-description: Use when setting up a NEW Hermes Agent workspace or onboarding a new agent/user — complete operating system for a fresh Hermes install: vault, memory, skills, cron, verification, cost control.
+description: "Use when setting up a NEW Hermes Agent workspace or onboarding a new agent/user — complete operating system for a fresh Hermes install: vault, memory, skills, cron, verification, cost control."
 ---
 
 # Hermes Workspace OS — system startowy dla nowego agenta
@@ -45,19 +45,16 @@ Każdy moduł to osobny plik — wczytaj potrzebne, nie wszystkie naraz:
 | [modules/18-virtual-team.md](modules/18-virtual-team.md) | Virtual team — org chart, rekrutacja, tygodniowy rytm |
 | [modules/19-design-taste.md](modules/19-design-taste.md) | Design & taste — anti-AI-look dla obrazków/UI/copy |
 
-## Quick start (nowy workspace, 60 minut)
+## Quick start (nowy workspace, orientacyjnie)
 
 > **Ważne:** instalując ten skill, najpierw przeczytaj [README.md](../../README.md)
 > (filozofia + recipes), potem wróć tutaj po plan wdrożenia.
 
 Kolejność ma znaczenie: **memory first, persona second, interfaces last.**
 
-1. **Vault + memory** (35 min): struktura z `01-vault.md`, wypełnij `ACTIVE_CONTEXT.md`, zapisz 5–10 faktów o użytkowniku i środowisku.
-2. **SOUL.md** (5 min): osobowość agenta — ton, poziom formalności, czego nie robić.
-3. **AGENTS.md** (10 min): zasady projektu w `09-context-files.md` — krótko i chirurgicznie.
-4. **Skills** (10 min): przenieś 2–3 najczęstsze procedury do SKILL.md.
-5. **Cron** (10 min): 1–2 rutyny read-only (briefing / monitoring), z continuity i limitem.
-6. **Test prawdziwy**: sprawdź tool calls (nie chat!) — `10-security.md`.
+1. Wybierz ścieżkę w [przewodniku onboardingu](../../docs/onboarding.md); najpierw poznaj granice dostępu.
+2. Zacznij od fikcyjnego szablonu zadania i jednego workflow; pamięć i pliki kontekstu dostosuj wyłącznie za zgodą użytkownika.
+3. Przetestuj bezpieczne zadanie i sprawdź wynik. Automatyzację planuj osobno, po ustaleniu limitów, zatwierdzeń i sposobu zatrzymania.
 
 ## Checklist audytu istniejącego workspace
 

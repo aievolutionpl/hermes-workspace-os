@@ -3,7 +3,7 @@
 Injected memory jest czytana w KAŻDEJ turze. Każdy znak to koszt i szum.
 
 ## ZAPISUJ (high-signal)
-- Preferencje i korekty użytkownika ("Chris odrzuca X, chce Y") — najwyższy priorytet
+- Preferencje i korekty użytkownika (np. „użytkownik woli zwięzłe raporty”) — po uzyskaniu zgody
 - Fakty o środowisku (WSL, ścieżki mountów, gdzie są klucze/vault)
 - Hard rules ("zero `**` w mailach", "flue zawsze do sufitu")
 - Pitfalle narzędzi (każde odkryte metodą prób)
